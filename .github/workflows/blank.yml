@@ -16,5 +16,5 @@ jobs:
     - name: Download & Start ngrok
       run: |
         choco install ngrok -y
-        ngrok config add-authtoken ngrok config add-authtoken $YOUR_AUTHTOKEN
+        ngrok config ngrok config add-authtoken $YOUR_AUTHTOKEN
         ngrok tcp 3389
