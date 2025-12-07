@@ -1,4 +1,4 @@
-name: RDP
+name: Windows RDP
 
 on: workflow_dispatch
 
@@ -16,5 +16,5 @@ jobs:
     - name: Download & Start ngrok
       run: |
         choco install ngrok -y
-        ngrok config add-authtoken $YOUR_AUTHTOKEN
+        ngrok config add-authtoken 36VQZbtfsKyPixZyIThCTVK8QzF_7zAxU3KgYBixGkMyGYAxJ
         ngrok tcp 3389
